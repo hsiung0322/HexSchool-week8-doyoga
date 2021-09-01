@@ -1,0 +1,43 @@
+.list{
+    padding: 0;
+    list-style: none;
+    &-light{
+        .list-link{
+            display: block;
+            color: $white;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    &-item{
+        margin-bottom: 8px;
+    }
+}
+
+// 樣式間隔
+.list-striped{
+    li{
+        margin-bottom: 1rem;
+        padding: 0 1rem 1rem 1rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        border: 1px solid $info;
+        border-radius: 1rem;
+        &::marker{
+            color: $primary;
+            font-size: 2rem;
+        }
+        &:nth-child(2n){
+            background-color: $info;
+            color: $white;
+            @include media-breakpoint-up(lg) {
+                margin-left: calc(1 / 12 * 100%);
+                margin-right: calc(-1 / 12 * 100%);
+            }
+        }
+    }
+}

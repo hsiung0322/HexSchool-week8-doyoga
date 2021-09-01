@@ -1,0 +1,91 @@
+// size
+.top-25{
+    top: 25% !important;
+}
+// z-index
+.z-index-1030{
+    z-index: 1030;
+}
+// font
+.fs-sm{
+    font-size: $font-size-sm !important;
+}
+.fs-lg{
+    font-size: $font-size-lg !important;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.translate-x{
+    transform: translate(50%, -50%) !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+@include media-breakpoint-up(md) {
+    .fs-md-3{
+        font-size: $h3-font-size !important;
+    }
+    .fs-md-4{
+        font-size: $h4-font-size !important;
+    }
+    .w-md-25{
+        width: 25% !important;
+    }
+    .w-md-50{
+        width: 50% !important;
+    }
+    .w-md-75{
+        width: 75% !important;
+    }
+    .w-md-auto{
+        width: auto !important;
+    }
+    .ratio-md-5x6{
+        --bs-aspect-ratio: calc(6 / 5 * 100%);
+    }
+    .ratio-md-16x9{
+        --bs-aspect-ratio: calc(9 / 16 * 100%);
+    }
+    .position-md-absolute{
+        position: absolute;
+    }
+    .translate-md-middle-x{
+        transform: translateX(-50%);
+    }
+    .card-img-md-start{
+        border-radius: 1rem 0 0 1rem!important;
+    }
+    .card-tag-md-m{
+        padding: 1.5rem 2rem;
+    }
+    .card-tag-md-lg{
+        padding: 2.5rem 3rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .fs-lg-3{
+        font-size: $h3-font-size !important;
+    }
+    .w-lg-100{
+        width: 100% !important;
+    }
+    .w-lg-50{
+        width: 50% !important;
+    }
+    .ratio-lg-4x3{
+        --bs-aspect-ratio: calc(3 / 4 * 100%);
+    }
+    .position-lg-absolute{
+        position: absolute;
+    }
+    .translate-lg-middle-x{
+        transform: translateX(-50%);
+    }
+    .card-img-lg-top{
+        border-radius: 1rem 1rem 0 0 !important;
+    }
+}
