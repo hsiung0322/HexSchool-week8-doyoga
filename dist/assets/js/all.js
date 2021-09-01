@@ -35,14 +35,13 @@ $(function () {
 
   $('.accordion .card-header').click(function () {
     var isExpanded = $(this).attr('aria-expanded');
-    console.log('sss', isExpanded);
 
     if (isExpanded === 'true') {
       //展開
+      $('.info-open').css("transform", "");
+    } else {
       $('.info-open').css("transform", "scaleY(-1)");
       $('.info-open').css("transition-duration", ".5s");
-    } else {
-      $('.info-open').css("transform", "");
     }
   });
 });
